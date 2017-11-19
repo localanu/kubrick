@@ -1,4 +1,4 @@
-language: go
+language: c++
 
 install:
   - wget https://github.com/danmar/cppcheck/releases/download/1.81/cppcheck-1.81.tar.bz2 -O cppcheck.tar.bz2 
