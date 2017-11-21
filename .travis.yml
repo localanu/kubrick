@@ -1,11 +1,7 @@
 language: c++
-
-install:
-  - wget https://github.com/danmar/cppcheck/releases/download/1.81/cppcheck-1.81.tar.bz2 -O cppcheck.tar.bz2 
-  - tar xf cppcheck.tar.bz2 -C ~/bin
-  - mv ~/bin/cppcheck-1.81 ~/bin/cppcheck
-  - ls ~/bin
-  - rm cppcheck.tar.bz2
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install cppcheck
 
 script:
   -  cppcheck --enable=all --force . >> cppcheck.txt
