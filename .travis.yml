@@ -4,4 +4,4 @@ before_install:
   - sudo apt-get install cppcheck
 
 script:
-  -  cppcheck --enable=all --force . >> cppcheck.txt
+  -  cppcheck --enable=warring --force . >> cppcheck.txt
